@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ctTestSchedual"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/tvFilename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:width="300dp"
+        android:text="Filename"
+        android:textColor="@color/colorBack"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNopBai"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnNop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Nộp Bài"
+        android:textColor="@color/colorBack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNopBai"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnXoa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Xóa"
+        android:focusable="false"
+        android:textColor="@color/colorBack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvFilename"
+        app:layout_constraintTop_toBottomOf="@+id/tvNopBai"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imgTenLop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/ic_baseline_access_alarms_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgMaLop"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvHanNop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Hạn Nộp"
+        android:textColor="@color/colorBack"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/imgNgay"
+        app:layout_constraintTop_toBottomOf="@+id/tvDeadline"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvDeadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Deadline"
+        android:textColor="@color/colorBack"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/imgTenLop"
+        app:layout_constraintTop_toBottomOf="@+id/tvNoiDung"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imgMaLop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/ic_baseline_wysiwyg_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view8"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imgNgay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/ic_baseline_hourglass_full_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgTenLop"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvMaLop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:text="Mã Lớp"
+        android:textColor="@color/colorRed"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/view8"
+        android:layout_width="450dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/line_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.353"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMaLop" />
+
+    <TextView
+        android:id="@+id/tvNoiDung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:text="Nội Dung"
+        android:textColor="@color/colorBack"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/imgMaLop"
+        app:layout_constraintTop_toBottomOf="@+id/view8"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageView
+
+        android:id="@+id/imgPhong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_baseline_directions_run_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgNgay"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvNopBai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Đã/Chưa Nộp"
+        android:textColor="@color/colorBack"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/imgPhong"
+        app:layout_constraintTop_toBottomOf="@+id/tvHanNop"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

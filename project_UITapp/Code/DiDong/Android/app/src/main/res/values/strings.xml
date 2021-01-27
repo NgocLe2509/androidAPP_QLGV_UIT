@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">nhom7</string>
+    <string name="login">LOGIN</string>
+    <string name="enterpassword">Enterpassword</string>
+    <string name="enterusername">Enterusername</string>
+    <string name="todo">TODO</string>
+    <string name="click_here">Click here</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="xin_ch_o_nguy_n_v_ng_th_nh">Xin chào Nguyễn Vương Thịnh</string>
+    <string name="c_i_t">Cài đặt</string>
+    <string name="l_ch_h_c">Lịch học</string>
+    <string name="i_m">Điểm</string>
+    <string name="i_m_t_kh_u">Đổi mật khẩu</string>
+    <string name="ng_xu_t">Đăng xuất</string>
+    <string name="deadline">Deadline</string>
+    <string name="STT">STT </string>
+    <string name="Diem" >Điểm</string>
+    <string name="Hocky">Học kỳ</string>
+    <string name="Xeploai">Xếp loại</string>
+
+</resources>

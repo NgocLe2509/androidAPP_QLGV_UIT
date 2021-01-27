@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbarSize="100dp"
+    tools:context=".diemdanh">
+
+    <Button
+        android:id="@+id/btnBack2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Quay Lại"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDiemDanh" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/jshine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="86dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:srcCompat="@drawable/ic_baseline_arrow_left_24"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Điểm Danh"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="660dp"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="87dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="32dp"
+                    app:srcCompat="@drawable/four_squares_logo" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="32dp"
+                    app:srcCompat="@drawable/notice" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="32dp"
+                    app:srcCompat="@drawable/left_right_logo" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="32dp"
+                    app:srcCompat="@drawable/signal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="32dp"
+                    app:srcCompat="@drawable/r_logo" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvThongBao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        android:textColor="@color/colorBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <Button
+        android:id="@+id/btnBack1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Quay Lại"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvThongBao" />
+
+    <TextView
+        android:id="@+id/tvMaLop1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="180dp"
+        android:text="Mã Lớp:"
+        android:textSize="20dp"
+        android:textColor="@color/colorBack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/tvBuoi1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Buổi:"
+        android:textSize="20dp"
+        android:textColor="@color/colorBack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMaLop1" />
+
+    <TextView
+        android:id="@+id/tvCode1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Code:"
+        android:textSize="20dp"
+        android:textColor="@color/colorBack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBuoi1" />
+
+    <Button
+        android:id="@+id/btnDiemDanh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Điểm Danh"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCode1" />
+
+    <TextView
+        android:id="@+id/tvMaLop2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="180dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        android:textColor="@color/colorBack"
+        app:layout_constraintStart_toEndOf="@+id/tvMaLop1"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/tvBuoi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        android:textColor="@color/colorBack"
+        app:layout_constraintStart_toEndOf="@+id/tvBuoi1"
+        app:layout_constraintTop_toBottomOf="@+id/tvMaLop2" />
+
+    <TextView
+        android:id="@+id/tvCode2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        android:textColor="@color/colorBack"
+        app:layout_constraintStart_toEndOf="@+id/tvCode1"
+        app:layout_constraintTop_toBottomOf="@+id/tvBuoi2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

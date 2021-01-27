@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nhom7">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".home">
+        </activity>
+        <activity android:name=".enterPass">
+        </activity>
+        <activity android:name=".feedback">
+        </activity>
+        <activity android:name=".enterOTP">
+        </activity>
+        <activity android:name=".infoUser">
+        </activity>
+        <activity android:name=".forgot_pass">
+        </activity>
+        <activity android:name=".maudon">
+        </activity>
+        <activity android:name=".Schedual">
+        </activity>
+        <activity android:name=".testSchedual">
+        </activity>
+        <activity android:name=".Score">
+        </activity>
+        <activity android:name=".KhaoSat">
+        </activity>
+        <activity android:name=".web_view">
+        </activity>
+        <activity android:name=".startQuiz">
+        </activity>
+        <activity android:name=".Quiz">
+        </activity>
+        <activity android:name=".endQuiz">
+        </activity>
+        <activity android:name=".drl">
+        </activity>
+        <activity android:name=".thongbao">
+        </activity>
+        <activity android:name=".hocphi">
+        </activity>
+        <activity android:name=".deadline">
+        </activity>
+        <activity android:name=".diemdanh">
+        </activity>
+        <activity android:name=".item_diemdanh">
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="barcode"></meta-data>
+    </application>
+
+</manifest>

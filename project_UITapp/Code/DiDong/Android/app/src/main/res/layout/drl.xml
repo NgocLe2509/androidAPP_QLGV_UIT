@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarSize="100dp"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/jshine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgBack"
+        android:layout_width="86dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:srcCompat="@drawable/ic_baseline_arrow_left_24"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Điểm rèn luyện"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imgBack"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/view2">
+
+        <TextView
+            android:id="@+id/title_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Họ và tên:"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="10dp"
+            android:text=""
+            android:textColor="#000000"
+            android:textColorHint="#E8DADA"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <TextView
+            android:id="@+id/date_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:text="MSSV:      "
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvUserID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            android:text=""
+            android:textColor="#000000"
+            android:textColorHint="#FFE8DADA"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="91dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/colorWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgHome"
+                    android:layout_width= "40dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="32dp"
+                    app:srcCompat="@drawable/four_squares_logo" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgThongBao"
+                    android:layout_width= "40dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="32dp"
+                    app:srcCompat="@drawable/notice" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgDiemDanh"
+                    android:layout_width= "40dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="32dp"
+                    app:srcCompat="@drawable/left_right_logo" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivMaudon"
+                    android:layout_width= "40dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="32dp"
+                    app:srcCompat="@drawable/signal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgThongTinCaNhan"
+                    android:layout_width= "40dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="32dp"
+                    app:srcCompat="@drawable/r_logo" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TableLayout
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="MissingConstraints">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/STT"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/Hocky"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Năm Học"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/Diem"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/Xeploai"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+        </TableRow>
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

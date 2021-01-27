@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tvMaMon"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="NT105"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:id="@+id/tvMaLop"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="NT105.K12"/>
+
+    <TextView
+        android:id="@+id/tvTC"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:text="4"/>
+
+    <TextView
+        android:id="@+id/tvQT"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:text="8" />
+
+    <TextView
+        android:id="@+id/tvTH"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:text="7.5" />
+
+    <TextView
+        android:id="@+id/tvGK"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:text="9.5"/>
+
+    <TextView
+        android:id="@+id/tvCK"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:text="9.5" />
+
+    <TextView
+        android:id="@+id/tvTB"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:text="8.9" />
+</LinearLayout>

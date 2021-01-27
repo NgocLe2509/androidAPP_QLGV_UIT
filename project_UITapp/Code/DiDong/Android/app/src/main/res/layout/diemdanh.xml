@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <SurfaceView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/camerapreview"
+        tools:ignore="MissingConstraints"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/camerapreview"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Please focus on QR code"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/camerapreview"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="27dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

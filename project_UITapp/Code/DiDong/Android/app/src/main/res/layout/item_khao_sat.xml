@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/ma_mon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mã môn A"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="https://tinyurl.com/mon_hoc_A" />
+
+
+
+
+</LinearLayout>
